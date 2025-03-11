@@ -4,7 +4,32 @@
   padding: 2rem;
   text-align: center;
 }
-
+.card {
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+.card > div:nth-child(1) {
+  display: flex;
+  font-size: 30px;
+}
+.info > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.container-img {
+  width: 300px;
+}
+.container-img > img {
+  object-fit: cover;
+  width: 100%;
+}
+.card .label {
+  font-family: fantasy;
+}
+.card .content {
+  font-family: fantasy;
+}
+/*stilizzazione progetto iniziale*/
 .logo {
   height: 6em;
   padding: 1.5em;

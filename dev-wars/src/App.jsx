@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Personaggio from "./components/personaggio";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>Dev Wars</h1>
+      <Personaggio
+        nome={"Darth Vader"}
+        img={
+          "https://i.pinimg.com/1200x/3f/f6/fc/3ff6fcecc8d8b3070a073186cdfef406.jpg"
+        }
+        affiliazione={"Sith"}
+        attacco={90}
+        difesa={75}
+        livello={100}
+        abilita={"Strangolamento"}
+      />
+      <Personaggio
+        nome={"Generale Grevious"}
+        img={
+          "https://upload.wikimedia.org/wikipedia/en/5/54/General_Grievous.png"
+        }
+        affiliazione={"Separatisti"}
+        attacco={85}
+        difesa={70}
+        livello={85}
+        abilita={"Laser Vortex"}
+      />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
