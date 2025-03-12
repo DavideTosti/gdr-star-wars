@@ -2,8 +2,8 @@ export default function Personaggio(props) {
   return (
     <div
       className={
-        "card" && props.affiliazione === "Sith" ? "sith" : "separatisti"
-      }
+        `card ${props.affiliazione === "Sith" ? "sith" : "separatisti"}
+      `}
     >
       <div>
         <h3 className="nome">{props.nome}</h3>

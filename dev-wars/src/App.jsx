@@ -1,42 +1,39 @@
 import "./App.css";
 import Personaggio from "./components/personaggio";
+import personaggiStarWars from "./personaggi";
 
 function App() {
   let condition = true;
+  const strings = ["ciao", "arrivederci", "buona sera"];
 
   return (
     <>
       <h1>Dev Wars</h1>
       {condition ? (
         <div>
-          <Personaggio
-            nome={"Darth Vader"}
-            img={
-              "https://i.pinimg.com/1200x/3f/f6/fc/3ff6fcecc8d8b3070a073186cdfef406.jpg"
-            }
-            affiliazione={"Sith"}
-            attacco={90}
-            difesa={75}
-            livello={100}
-            abilita={"Strangolamento"}
-          />
-          <Personaggio
-            nome={"Generale Grevious"}
-            img={
-              "https://upload.wikimedia.org/wikipedia/en/5/54/General_Grievous.png"
-            }
-            affiliazione={"Separatisti"}
-            attacco={85}
-            difesa={70}
-            livello={85}
-            abilita={"Laser Vortex"}
-          />
+          {personaggiStarWars.map((x, index) => (
+            <Personaggio
+              nome={x.nome}
+              img={x.img}
+              affiliazione={x.affiliazione}
+              livello={x.livello}
+              attacco={x.attacco}
+              difesa={x.difesa}
+              abilita={x.abilita}
+              key={index}
+            ></Personaggio>
+          ))}
         </div>
       ) : (
         <div>
           <p>nessun personaggio presente</p>
         </div>
       )}
+      <ul>
+        {strings.map((x, index) => (
+          <li key={index}>{x}</li>
+        ))}
+      </ul>
     </>
   );
 }
