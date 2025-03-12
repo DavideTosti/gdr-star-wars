@@ -10,7 +10,7 @@ const personaggiStarWars = [
   },
   {
     nome: "Luke Skywalker",
-    img: "https://i.pinimg.com/originals/70/2e/c1/702ec1c19b5999b3fbd87cb88e462923.jpg",
+    img: "https://wannabe-toys.com/wp-content/uploads/2024/05/star-wars-dark-empire-comic-masterpiece-action-figure-luke-skywalker-hot-toys.jpg",
     affiliazione: "Jedi",
     attacco: 85,
     difesa: 80,
@@ -28,7 +28,7 @@ const personaggiStarWars = [
   },
   {
     nome: "Darth Maul",
-    img: "https://static.wikia.nocookie.net/starwars/images/9/97/Darth_Maul_profile.png",
+    img: "https://www.impericon.com/cdn/shop/files/x_hot913363_b_e7404ecf-13e4-4f4d-808c-9a3b2555cd45.jpg",
     affiliazione: "Sith",
     attacco: 92,
     difesa: 70,
@@ -46,7 +46,7 @@ const personaggiStarWars = [
   },
   {
     nome: "Kylo Ren",
-    img: "https://upload.wikimedia.org/wikipedia/en/5/5b/Kylo_Ren_in_Star_Wars_The_Force_Awakens.png",
+    img: "https://www.starshop.it/media/catalog/product/cache/a018a830359f49ee6061d02f0e704676/p/r/prodotti-01169SWFA0001.jpg",
     affiliazione: "Sith",
     attacco: 88,
     difesa: 72,
@@ -55,7 +55,7 @@ const personaggiStarWars = [
   },
   {
     nome: "Rey",
-    img: "https://upload.wikimedia.org/wikipedia/en/3/3b/Rey_Star_Wars.png",
+    img: "https://i.etsystatic.com/8788928/r/il/9594f8/3763280010/il_794xN.3763280010_rhq9.jpg",
     affiliazione: "Jedi",
     attacco: 82,
     difesa: 78,
@@ -64,7 +64,7 @@ const personaggiStarWars = [
   },
   {
     nome: "Boba Fett",
-    img: "https://upload.wikimedia.org/wikipedia/en/3/3e/Boba_Fett.png",
+    img: "https://cdn.1001hobbies.it/1718119-large_default/kotobukiya-ktosw194-star-wars-il-libro-di-boba-fett-statuetta-in-pvc-.jpg",
     affiliazione: "Cacciatore di taglie",
     attacco: 75,
     difesa: 80,
@@ -73,7 +73,7 @@ const personaggiStarWars = [
   },
   {
     nome: "Palpatine",
-    img: "https://upload.wikimedia.org/wikipedia/en/9/93/Emperor_RotJ.png",
+    img: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*Q9pbgovcoS-4E1cUDLVxwg.png",
     affiliazione: "Sith",
     attacco: 95,
     difesa: 85,
@@ -82,7 +82,7 @@ const personaggiStarWars = [
   },
   {
     nome: "General Grievous",
-    img: "https://upload.wikimedia.org/wikipedia/en/e/ea/General_Grievous.png",
+    img: "https://itakon.it/wp-content/uploads/2014/02/General-Grievous-20-532x800.jpg",
     affiliazione: "Separatisti",
     attacco: 90,
     difesa: 65,
