@@ -4,6 +4,15 @@
   padding: 2rem;
   text-align: center;
 }
+
+.sith {
+  border: 2px solid red;
+}
+
+.separatisti {
+  border: 2px solid blue;
+}
+
 .card {
   box-shadow: 5px 5px 15px 5px #000000;
 }
