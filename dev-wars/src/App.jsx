@@ -10,7 +10,7 @@ function App() {
     <>
       <h1>Dev Wars</h1>
       {condition ? (
-        <div>
+        <div className="container">
           {personaggiStarWars.map((x, index) => (
             <Personaggio
               nome={x.nome}
