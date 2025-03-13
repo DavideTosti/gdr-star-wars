@@ -10,7 +10,7 @@ const personaggiStarWars = [
   },
   {
     nome: "Luke Skywalker",
-    img: "https://wannabe-toys.com/wp-content/uploads/2024/05/star-wars-dark-empire-comic-masterpiece-action-figure-luke-skywalker-hot-toys.jpg",
+    img: "https://w0.peakpx.com/wallpaper/468/241/HD-wallpaper-luke-skywalker-luke-skywalker-star-wars-thumbnail.jpg",
     affiliazione: "Jedi",
     attacco: 85,
     difesa: 80,
