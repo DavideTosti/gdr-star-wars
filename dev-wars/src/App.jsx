@@ -7,27 +7,28 @@ import personaggiStarWars from "./personaggi";
 function App() {
   let condition = true;
   const strings = ["ciao", "arrivederci", "buona sera"];
-
+const jedi = [
+  {
+    nome: "Yoda",
+    frase: `La paura è la via per il Lato Oscuro. La paura conduce all'ira,
+            l'ira all'odio; l'odio conduce alla sofferenza`,
+  },
+  {
+    nome: "Obi-Wan Kenobi",
+    frase: `La capacità di parlare non ti rende intelligente`,
+  },
+  {
+    nome: "Mace Windu",
+    frase: `Non c'è dubbio, il misterioso guerriero era un Sith. Ma quale è
+            stato ucciso? Il maestro, o l'apprendista?`,
+  },
+];
   return (
     <>
       <h1>Dev Wars</h1>
 
       <Holocron>
-        <Jedi title={"Yoda"}>
-          <p>
-            La paura è la via per il Lato Oscuro. La paura conduce all'ira,
-            l'ira all'odio; l'odio conduce alla sofferenza
-          </p>
-        </Jedi>
-        <Jedi title={"Obi-Wan Kenobi"}>
-          <p> La capacità di parlare non ti rende intelligente</p>
-        </Jedi>
-        <Jedi title={"Mace Windu"}>
-          <p>
-            Non c'è dubbio, il misterioso guerriero era un Sith. Ma quale è
-            stato ucciso? Il maestro, o l'apprendista?
-          </p>
-        </Jedi>
+        {jedi.map((x, index)=> (<Jedi key= {index}title={x.nome}><p>{x.frase}</p></Jedi>))}
       </Holocron>
 
       {condition ? (
