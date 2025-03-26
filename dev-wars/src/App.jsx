@@ -1,4 +1,6 @@
 import "./App.css";
+import Holocron from "./components/Holocron";
+import Jedi from "./components/Jedi";
 import Personaggio from "./components/personaggio";
 import personaggiStarWars from "./personaggi";
 
@@ -9,6 +11,25 @@ function App() {
   return (
     <>
       <h1>Dev Wars</h1>
+
+      <Holocron>
+        <Jedi title={"Yoda"}>
+          <p>
+            La paura è la via per il Lato Oscuro. La paura conduce all'ira,
+            l'ira all'odio; l'odio conduce alla sofferenza
+          </p>
+        </Jedi>
+        <Jedi title={"Obi-Wan Kenobi"}>
+          <p> La capacità di parlare non ti rende intelligente</p>
+        </Jedi>
+        <Jedi title={"Mace Windu"}>
+          <p>
+            Non c'è dubbio, il misterioso guerriero era un Sith. Ma quale è
+            stato ucciso? Il maestro, o l'apprendista?
+          </p>
+        </Jedi>
+      </Holocron>
+
       {condition ? (
         <div>
           {personaggiStarWars.map((x, index) => (
