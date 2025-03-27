@@ -1,9 +1,8 @@
 import "./App.css";
 import Holocron from "./components/Holocron";
 import Jedi from "./components/Jedi";
-import Personaggio from "./components/personaggio";
-import personaggiStarWars from "./personaggi";
-import listaPersonaggi from "./components/listaPersonaggi";
+import ListaPersonaggi from "./components/listaPersonaggi";
+import DevWars from "./components/devWars";
 
 function App() {
   let condition = false;
@@ -31,9 +30,9 @@ const jedi = [
       <Holocron>
         {jedi.map((x, index)=> (<Jedi key= {index}title={x.nome}><p>{x.frase}</p></Jedi>))}
       </Holocron>
-
+     <DevWars></DevWars>
       {condition ? (
-       <listaPersonaggi></listaPersonaggi>
+       <ListaPersonaggi></ListaPersonaggi>
       ) : (
         <div>
           <p>nessun personaggio presente</p>

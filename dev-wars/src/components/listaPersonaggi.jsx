@@ -1,5 +1,5 @@
 import personaggiStarWars from "../personaggi";
-export default function listaPersonaggi(){
+export default function ListaPersonaggi(){
  return (
     <div className="container">
           {personaggiStarWars.map((x, index) => (
