@@ -3,10 +3,11 @@ import Holocron from "./components/Holocron";
 import Jedi from "./components/Jedi";
 import Personaggio from "./components/personaggio";
 import personaggiStarWars from "./personaggi";
+import listaPersonaggi from "./components/listaPersonaggi";
 
 function App() {
-  let condition = true;
-  const strings = ["ciao", "arrivederci", "buona sera"];
+  let condition = false;
+  
 const jedi = [
   {
     nome: "Yoda",
@@ -32,32 +33,17 @@ const jedi = [
       </Holocron>
 
       {condition ? (
-        <div className="container">
-          {personaggiStarWars.map((x, index) => (
-            <Personaggio
-              nome={x.nome}
-              img={x.img}
-              affiliazione={x.affiliazione}
-              livello={x.livello}
-              attacco={x.attacco}
-              difesa={x.difesa}
-              abilita={x.abilita}
-              key={index}
-            ></Personaggio>
-          ))}
-        </div>
+       <listaPersonaggi></listaPersonaggi>
       ) : (
         <div>
           <p>nessun personaggio presente</p>
         </div>
       )}
-      <ul>
-        {strings.map((x, index) => (
-          <li key={index}>{x}</li>
-        ))}
-      </ul>
+      
     </>
   );
 }
 
 export default App;
+
+
